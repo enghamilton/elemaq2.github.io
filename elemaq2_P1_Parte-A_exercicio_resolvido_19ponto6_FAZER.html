@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax AsciiMath Test Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+body{
+	font-size:1.05em;
+}
+</style>
+</head> 
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+
+<p>
+	
+</p>
+
+<!-- https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference --> 
+
+<p style="text-align:center">
+	Exercício 19.6 - resolvido - elementos de máquinas 2 do curso de engenharia mecânica FEI
+	</br>Dado o sistema abaixo, com 
+	$$
+	{
+	\\ P_{motor}=10 cv \, n_{motor}=1.800 rpm, \, \eta_{engr}=97 \% , \, \eta_{rol}=99\%,
+	\\ a'_{12} \, = \, 105 \, mm \, a'_{23} = 127,5 \, mm, a'_{34} \, = \, 202 \, mm,
+	\\ a'_{45} \, = \, 282 \, mm, ECDR, \, m_{GH} \, = \, m_{IJ} \, = 4 \, mm, \, engrenagem
+	\\ de \, precisão, \, pinhões \, 4320, \, coroas \, 8620, \, regime \, intermitente,
+	\\ torque \, muito \, variável, \, determinar \, :
+	}
+	$$
+</p>
+
+	1) Frequências de rotações possíveis no eixo de saída.</br>
+	2) Tipo de engrenamento e fator de deslocamento `x_j` do par KL.</br>
+	3) Largura b dos dentes do par CD</br>
+	4) Torques de entreda no eixo 5</br>
+	5) Torques que a roda D recebe.</br>
+	6) Tipo de engrenamento e fator de deslocamento do par GH</br>
+	7) Grau de recobrimento do par AB</br>
+	8) Diâmetro interno da roda D.</br>
+
+Item 1) exercício resolvido
+</br>
+
+<p>
+	redução (A pinhão motora) `x_1` e `x_2` :
+	$$ {
+		\\ \frac{ z_B}{z_A} \, = \, \frac{n_A}{n_B} \implies n_B \, = \, \frac{z_A}{z_B}.n_A
+		\\n_B \, = \, \frac{z_A}{z_B}.n_A \, = \frac{16}{89}.1800 \, = \, 0,18 \, x \, 1800 \, = \, 323,6 \, rpm 
+	} $$
+</p>
+
+<p>
+	$$ {
+		\\ redutora \, mesma \, rotação
+		\begin{cases}
+			\\n_D \, = \, \cfrac{z_C}{z_D}.n_C \, = \cfrac{15}{87}.323,6 \, = \, 0,17 \, . \, 323,6 \, = \, 55,8 \, rpm 
+			\\n_F \, = \, \cfrac{z_F}{z_E}.n_F \, = \cfrac{15}{87}.323,6 \, = \, 0,17 \, . \, 323,6 \, = \, 55,8 \, rpm 
+		\end{cases}
+	} $$
+</p>
+
+<p>
+	$$ {
+		\\redutora
+		\begin{cases}
+			\\n_H \, = \, \cfrac{z_G}{z_H}.n_G \, = \cfrac{31}{69}.55,8 \, = \, 0,45 \, . \, 55,8 \, = \, 25 \, rpm 
+			\\n_J \, = \, \cfrac{z_I}{z_J}.n_I \, = \cfrac{34}{67}.55,8 \, = \, 0,50 \, . \, 55,8 \, = \, 28,3 \, rpm 
+		\end{cases}
+	} $$
+</p>
+
+text goes here `\ne` a' = 123456 mm é engrenamento V
+	<math>
+		<menclose notation="circle box">
+			<mo> + </mo>
+		</menclose>
+	</math>
+
+<hr/>
+Engenheiro mecânico Hamilton Kamiya CREA-SP 5069268577
+</body>
+</html>
